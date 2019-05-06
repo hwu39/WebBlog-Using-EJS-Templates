@@ -1,0 +1,18 @@
+<%- include("partials/header"); -%>
+
+
+  <h1 action="/" class="hello">Hello</h1>
+
+  <p><%= homeContent %></p>
+
+  <% messageArray.forEach(function(element) { %>
+  <% console.log(element.postTitle); %>
+    <h1><%= element.postTitle %></h1>
+      <p>
+        <%= element.trun %>
+        <a href="/<%= element.postTitle %>" action="/post">Read More</a>
+      </p>
+  <% });  %>
+
+
+<%- include("partials/footer"); -%>
