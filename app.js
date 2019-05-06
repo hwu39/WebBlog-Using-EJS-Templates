@@ -30,12 +30,10 @@ app.get("/", function(req, res) {
 
 app.get("/about", function(req, res) {
   res.render('about', {abtContent: aboutContent});
-  res.send();
 });
 
 app.get("/contact", function(req, res) {
   res.render('contact', {ctContent: contactContent});
-  res.send();
 });
 
 app.get("/compose", function(req, res) {
